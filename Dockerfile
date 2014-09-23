@@ -1,12 +1,15 @@
-FROM php-cli:latest
+FROM dylanlindgren/docker-phpcli:latest
 
 MAINTAINER "Dylan Lindgren" <dylan.lindgren@gmail.com>
 
-RUN mkdir -p /data/www
-WORKDIR /data/www
+WORKDIR /tmp
 
-RUN useradd --uid 2000 artisan
-USER artisan
+RUN apt-get update -y && \
+    apt-get install -y php5-mcrypt
+
+RUN mkdir -p /data/www
+VOLUME ["/data"]
+WORKDIR /data/www
 
 ENTRYPOINT ["php", "artisan"]
 CMD ["--help"]
