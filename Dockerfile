@@ -5,7 +5,14 @@ MAINTAINER "Dylan Lindgren" <dylan.lindgren@gmail.com>
 WORKDIR /tmp
 
 RUN apt-get update -y && \
-    apt-get install -y php5-mcrypt
+    apt-get install -y \
+    php5-mcrypt \
+    php5-mongo \
+    php5-mssql \
+    php5-mysqlnd \
+    php5-pgsql \
+    php5-redis \
+    php5-sqlite \
 
 RUN mkdir -p /data/www
 VOLUME ["/data"]
