@@ -12,7 +12,7 @@ RUN apt-get update -y && \
     php5-mysqlnd \
     php5-pgsql \
     php5-redis \
-    php5-sqlite \
+    php5-sqlite
 
 RUN mkdir -p /data/www
 VOLUME ["/data"]
