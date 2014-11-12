@@ -1,5 +1,3 @@
-dylanlindgren/docker-laravel-artisan
-====================
 ![Docker + Laravel](https://cloud.githubusercontent.com/assets/6241518/4891721/25ebb90e-63ab-11e4-9eb6-09d8d62d8cb1.jpg)
 
 This is a [Docker](http://www.docker.com) image for the [Artisan command line interface](http://laravel.com/docs/artisan?), intended for use in the fashion described on my series of blog articles about using Docker and the [Laravel PHP framework](http://www.laravel.com) together:
