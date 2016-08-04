@@ -13,6 +13,8 @@ RUN apt-get update -y && \
     php5-pgsql \
     php5-redis \
     php5-sqlite \
+    imagemagick \
+    php5-imagick \
     php5-gd
 
 RUN mkdir -p /data/www
